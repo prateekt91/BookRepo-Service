@@ -19,6 +19,6 @@ import com.bookeep.search.model.BooksCatalog;
 @Repository
 public interface BooksCatalogDAO extends MongoRepository<BooksCatalog,Integer>{
 
-	@Query(value="{ 'title' : ?0 }",fields="{'title':1}")
+	@Query(value="{ 'title' : ?0 }")
 	List<BooksCatalog> findBookByTitle(String title);
 }

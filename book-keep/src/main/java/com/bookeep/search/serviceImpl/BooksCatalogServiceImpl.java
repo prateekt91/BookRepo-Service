@@ -5,6 +5,7 @@ package com.bookeep.search.serviceImpl;
 
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.bookeep.search.dao.BooksCatalogDAO;
@@ -19,6 +20,7 @@ import com.bookeep.search.services.BooksCatalogService;
 @Service
 public class BooksCatalogServiceImpl implements BooksCatalogService {
 
+	@Autowired
 	BooksCatalogDAO booksDAO;
 	
 	@Override

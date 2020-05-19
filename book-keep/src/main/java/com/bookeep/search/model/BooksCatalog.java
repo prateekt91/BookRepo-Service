@@ -1,6 +1,9 @@
 package com.bookeep.search.model;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import com.mongodb.lang.NonNull;
 
 /**
  * @author Prateek
@@ -11,6 +14,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "BooksCatalog")
 public class BooksCatalog {
 
+	@Id
+	@NonNull
+	private String _id;
 	private String isbn;
 	private String title;
 	private String subtitle;

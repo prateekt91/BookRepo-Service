@@ -23,4 +23,7 @@ public interface RestApi {
 
 	@GetMapping("/searchByName/{name}")
 	public List<BooksCatalog> getBookByName(@PathVariable String name);
+	
+	@GetMapping("/allBooks")
+	public List<BooksCatalog> getAllBooks();
 }
